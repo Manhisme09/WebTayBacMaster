@@ -196,9 +196,6 @@
                     </div>
                 </div>
                 <div class="hero__item set-bg" style="height: 431px;" data-setbg="<?php echo _WEB_ROOT . "/public/img/hero/banner.jpg" ?>">
-                    <div class="hero__text">
-                        <h3 style="background-color: #7fad39;">Thịt trâu gác bếp <br> Ngon đúng vị Tây Bắc</h3>
-                    </div>
                 </div>
             </div>
         </div>
