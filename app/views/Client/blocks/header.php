@@ -93,7 +93,7 @@
             <div class="col-lg-3">
                 <div class="header__cart">
                     <ul>
-                        <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                        <li><a href="<?php echo _WEB_ROOT . "/order/user" ?>"><i class="fa-solid fa-file-invoice"></i></a></li>
                         <li><a href="<?php echo _WEB_ROOT . "/cart" ?>"><i class="fa fa-shopping-bag"></i> <span><?php
                                                                                                                     if (!empty($_SESSION['cart_tb'])) {
                                                                                                                         $cart = $_SESSION['cart_tb'];
