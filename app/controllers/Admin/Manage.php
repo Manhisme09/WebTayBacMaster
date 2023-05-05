@@ -234,4 +234,19 @@ class Manage extends Control
             header('Location:' . _WEB_ROOT . "/Admin/Manage/blogs");
         }
     }
+
+    public function statistic($temp = []) {
+        $get = $this->model("Admin/ProductModel");
+        $reusilt_numberOfClient = mysqli_fetch_array( $get->get_numberClient())['count(*)'];
+        $reusilt_numberOfProduct = mysqli_fetch_array( $get->get_numberProduct())['count(*)'];
+        $reusilt_numberOfOrder = mysqli_fetch_array( $get->get_numberOrder())['count(*)'];
+        $reusilt_numberOfMoney = mysqli_fetch_array( $get->get_money())['sum(total_price)'];
+        $this->view("Admin/layoutss/mainLayout", [
+            "page" => "StatisticPage",
+            "number_client" => $reusilt_numberOfClient,
+            "number_order" => $reusilt_numberOfOrder,
+            "number_product" => $reusilt_numberOfProduct,
+            "money" =>  $reusilt_numberOfMoney,
+        ]);
+    }
 }
