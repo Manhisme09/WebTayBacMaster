@@ -214,4 +214,14 @@ class HomeModels extends DB
         where id = '$id' ";
         return mysqli_query($this->con, $sql);
     }
+    public function get_order_user($customer_id)
+    {
+        $sql = "select orders.* from orders join customers on orders.customer_id = customers.id where customer_id = '$customer_id' ";
+        return mysqli_query($this->con, $sql);
+    }
+    public function get_order_user_detail($key)
+    {
+        $sql = "select * from orders_product join products on orders_product.product_id = products.product_id where order_id = '$key' ";
+        return mysqli_query($this->con, $sql);
+    }
 }
