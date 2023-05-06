@@ -234,4 +234,15 @@ class Manage extends Control
             header('Location:' . _WEB_ROOT . "/Admin/Manage/blogs");
         }
     }
+
+    public function clients($temp = [])
+    {
+        if (empty($temp)) {
+            $get = $this->model("Admin/ProductModel");
+                $this->view("Admin/layoutss/mainLayout", [
+                    "page" => "ClientPage",
+                    "clients" => $get->get_clients(),
+            ]);
+        }
+    }
 }

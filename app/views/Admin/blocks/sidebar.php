@@ -39,6 +39,12 @@
             <span>Quản lý đơn hàng</span></a>
     </li>
 
+    <li class="nav-item active">
+        <a class="nav-link" href="<?php echo _WEB_ROOT . "/Admin/Manage/clients" ?>">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Quản lý khách hàng</span></a>
+    </li>
+
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
