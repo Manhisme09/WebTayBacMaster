@@ -60,6 +60,12 @@ class ProductModel extends DB
         return mysqli_query($this->con, $sql);
     }
 
+    public function get_clients()
+    {
+        $sql = "select * from customers";
+        return mysqli_query($this->con, $sql);
+    }
+
 
     // public function get_product_apple($name)
     // {
