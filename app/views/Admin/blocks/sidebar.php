@@ -11,6 +11,12 @@
     <!-- Divider -->
     <hr class="sidebar-divider my-0">
 
+    <li class="nav-item active">
+        <a class="nav-link" href="<?php echo _WEB_ROOT . "/Admin/Manage/statistic" ?>">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Thống kê</span></a>
+    </li>
+
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
         <a class="nav-link" href="<?php echo _WEB_ROOT . "/Admin/Manage/product" ?>">
@@ -18,7 +24,6 @@
             <span>Quản lý sản phẩm</span></a>
     </li>
 
-    <hr class="sidebar-divider my-0">
 
 
     <li class="nav-item active">

@@ -60,6 +60,29 @@ class ProductModel extends DB
         return mysqli_query($this->con, $sql);
     }
 
+    public function get_numberClient()
+    {
+        $sql = "select count(*) from customers";
+        return mysqli_query($this->con, $sql);
+    }
+
+    public function get_numberOrder()
+    {
+        $sql = "select count(*) from orders";
+        return mysqli_query($this->con, $sql);
+    }
+
+    public function get_numberProduct()
+    {
+        $sql = "select count(*) from products";
+        return mysqli_query($this->con, $sql);
+    }
+
+    public function get_money()
+    {
+        $sql = "select sum(total_price) from orders";
+        return mysqli_query($this->con, $sql);
+    }
 
     // public function get_product_apple($name)
     // {
